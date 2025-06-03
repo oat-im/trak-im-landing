@@ -40,19 +40,25 @@
 <body class="bg-white text-gray-900">
 
   <header class="bg-gray-900 text-white">
-    <!-- Logo bar -->
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-center gap-3">
-      <img src="/favicon.svg" alt="Trak.im Logo" class="h-10 w-10">
-      <span class="text-2xl trak-logo-text">trak.im</span>
+    <!-- Top bar with logo -->
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center">
+      <img src="/favicon.svg" alt="Trak.im logo" class="h-10 w-10 mr-3">
+      <span class="text-xl trak-logo-text">trak.im</span>
     </div>
-
-    <!-- Hero section -->
-    <div class="max-w-6xl mx-auto px-6 pb-10 text-center">
-      <img src="/assets/hero.jpg" alt="Budget planning" class="mx-auto rounded shadow-lg mb-6 max-h-96 w-full object-cover">
-      <p class="mt-4 text-xl">Budget like it owes you money. Because it does.</p>
-      <a href="#features" class="mt-6 inline-block px-6 py-3 bg-yellow-500 text-black font-semibold rounded hover:bg-yellow-400 transition">
-        Learn More
-      </a>
+  
+    <!-- Full-bleed hero wrapper -->
+    <div class="w-full overflow-hidden">
+      <div class="relative w-full max-w-none">
+        <img src="/assets/hero.jpg" alt="Budget planning"
+          class="w-full h-auto object-cover">
+  
+        <!-- Slogan overlay -->
+        <div class="absolute inset-0 flex items-center justify-end pr-10">
+          <p class="bg-gray-900/80 text-white p-4 rounded text-xl max-w-md text-right">
+            Budget like it owes you money.<br/>Because it does.
+          </p>
+        </div>
+      </div>
     </div>
   </header>
 
